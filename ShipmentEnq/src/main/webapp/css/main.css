@@ -1,0 +1,151 @@
+.table {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	width: 50%;
+	padding-top: 12px;
+	border-collapse: collapse;
+	border: none;
+}
+
+caption {
+	text-align: left;
+	color: silver;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+th {
+	border: 1px solid gray !important;
+	text-align: left !important;
+	padding: 10px !important;
+	color: white !important;
+	border-collapse: collapse !important;
+	background-color: #4B1388 !important;
+}
+
+tbody tr:nth-child(even) {
+	background: WhiteSmoke !important;
+}
+
+tbody tr td:nth-child(2) {
+	text-align: left !important;
+}
+
+tbody tr td:nth-child(3), tbody tr td:nth-child(4) {
+	text-align: center !important;
+	font-family: monospace !important;
+}
+
+tfoot {
+	background: SeaGreen !important;
+	color: white !important;
+	text-align: right !important;
+}
+
+tfoot tr th:last-child {
+	font-family: monospace !important;
+}
+
+td {
+	border: 1px solid gray !important;
+	text-align: left !important;
+	padding: 10px !important;
+	padding-left: 1px !important;
+	border-collapse: collapse !important;
+}
+.borderNone {
+	border: none !important;
+}
+
+.selected {
+	background: #aaa8ad !important;
+	color: white !important;
+}
+
+
+/* ****************************************************************** */
+.alignButton{
+	padding:9px !important;
+	width:25px !important;
+	
+}
+.alignButton1{
+	padding:7px !important;
+	width:25px !important;
+	margin-right:7px;
+	
+}
+.mainbuttons
+{
+	background: #4B1388;
+	padding: 3px 5px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 4px;
+	border: 1px solid black;
+	width:170px !important;
+}
+.navbar1{
+	font-size:'1px';
+	 text-color:'#eee';
+	 background: #4B1388;
+	 margin:3px;
+	 height:35px;
+	 font-size:12px;
+}.navbuttons
+{
+	background: #4B1388;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	border-radius: 2px;
+	 border: 1px #4B1388; 
+	 width:150px;
+	
+}
+/* ******************************************************************4th April, 17 */
+.alignButton{
+	padding:9px !important;
+	width:25px !important;
+	
+}
+.alignButton1{
+	padding:7px !important;
+	width:25px !important;
+	margin-right:7px;
+	
+}
+.mainbuttons
+{
+	background: #4B1388;
+	padding: 3px 5px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 4px;
+	border: 1px solid black;
+	width:170px !important;
+	length:170px;
+}
+.navbar1{
+	font-size:'1px';
+	 text-color:'#eee';
+	 background: #4B1388;
+	 margin:3px;
+	 height:35px;
+	 font-size:12px;
+}.navbuttons
+{
+	background: #4B1388;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	border-radius: 2px;
+	 border: 1px #4B1388; 
+	 width:150px;
+	
+}
+

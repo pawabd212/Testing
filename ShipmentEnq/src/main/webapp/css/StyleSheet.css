@@ -1,0 +1,187 @@
+element.style {
+    overflow-x: hidden;
+}
+user agent stylesheet
+body {
+    display: block;
+    margin: 8px;
+}
+QuickPayStyleSheet.css:19
+
+.submit-button {
+	background: #4B1388;
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#25A6E1',
+		endColorstr='#188BC0', GradientType=0);
+	padding: 3px 5px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 4px;
+	border: 1px solid black
+}
+
+.normle-button {
+	background: #4B1388;
+	padding: 3px 5px;
+	color: white;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 15px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 4px;
+	border: 1px solid black
+}
+
+
+/* *********************************************************************** */
+.defaultColor {
+	background-color: #4B1388;
+	color: white
+}
+.btn-group {
+	height: 5em;
+}
+
+.well-sm {
+	font-size: 16px;
+}
+
+.white {
+	color: white
+}
+
+.margin-top_30 {
+	margin-top: 5px;
+}
+
+.groove{
+	/* outline-style: groove; */
+	border-style:groove;
+    outline-color: #4B1388;
+}
+.head-bar{
+	background-color:#4B1388 ;
+	color:white ;
+	width:100% ;
+	height:40px ;
+	padding-top:5px;
+	padding-bottom:5px ;
+	font-size: 25px;
+	text-align:left ;
+	margin-top:20px;
+}
+/* **************************************************************************** */
+
+.textFieldSmall{	
+	width: 50px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 7px;
+    font-weight: 200;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+.textFieldLarge{	  
+    width: 160px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 7px;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+
+.textFieldDate{	  
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 7px;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+
+
+
+
+.textFieldVerySmall{	  
+    width: 35px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 7px;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+.textFieldMedium{	  
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 7px;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+    }
+
+
+/* ************************************************************************** */
+
+.dropDownListReport{	
+	width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+
+.dropDownListLarge{	
+	width: 160px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+.dropDownListSmall{	
+	width: 70px;
+    height: 28px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}
+
+.dropDownListVerySmall{	
+	width: 70px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    font-weight: 200;
+    font-size: 12px;
+    font-family: sans-serif;
+    box-shadow: 1px 1px 5px #CCC;
+}

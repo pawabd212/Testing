@@ -1,0 +1,79 @@
+
+
+<!-- CSS files included -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/StyleSheet.css">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/main.css" />
+
+
+	<div class="container" id="bodyDiv"  >
+	<div class="margin-top_30"
+		style="margin-bottom: 80px;padding-top: 2px; 900 px; max-height: 1200px;"
+		>
+		<form ng-submit="submitProDetail()">
+			<table style="width: 75%;">
+				<tr>
+					<td class="borderNone">Pro Number <input type="text"
+						class="textFieldLarge" size="15" ng-model="proDetailForm.proName"
+						maxlength="35" required ng-click="checkInitialLength()" />&nbsp; <input
+						type="text" class="textFieldSmall" size="4"
+						ng-model="proDetailForm.proSuffix" maxlength="3" required /> <input
+						type="submit" value="Submit" class="blue-button"
+						/>
+					</td>
+					<th><b>Transfer Info</b></th>
+
+				</tr>
+				<tr>
+					<td class="borderNone" bgcolor="#eee"></td>
+					<td class="borderNone" bgcolor="#eee">To Local &nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <select
+						ng-model="proSaveForm.toLoc" ng-options="x for x in loc"
+						ng-disabled="disable" ng-click="enableDropDown2()"></select><br />
+					</td>
+				</tr>
+				<tr>
+					<td class="borderNone"></td>
+					<td class="borderNone">Reason
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select
+						ng-model="proSaveForm.reason" ng-options="x for x in reason"
+						ng-disabled="disable1" ng-click="enableButton()"></select><br />
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table style="width: 34%;">
+			<tr>
+				<th>Pro Number</th>
+				<th>Results</th>
+			</tr>
+			<tbody ng-repeat="proDetail in proDetails" ng-init="disable=true"
+				name="proDetail[$index]">
+				<tr ng-init="rowIndex=$index"
+					ng-click="changeColor(rowIndex,disable,proDetail)"
+					ng-class="rowIndex==selectedRow?'selected':''">
+
+					<td>{{ proDetail.proName }} {{ proDetail.proSuffix }}</td>
+					<td>{{ proDetail.transferStatus }}</td>
+				</tr>
+		</table>
+</br>
+		</br>
+		</br>
+		</br> </br> </br>
+		<div
+			style="height: 10px; padding-top: 50px; padding-right: 100px; padding-left: 150px">
+			<input type="Button" class="normle-button " id="transferBtn"
+				value="Transfer F2" disabled="disabled" ng-disabled="disable2"
+				ng-click="saveProDetails();" /> &nbsp;&nbsp; <input type="Button"
+				class="normle-button " id="" value="Comments F6"
+				ng-click="commentBtn()" />&nbsp;&nbsp; <input type="Button"
+				class="normle-button " id="exit" value="Exit" ng-click="exitBtn()" />
+			&nbsp;&nbsp; <input type="Button" class="normle-button " id=""
+				value="MexicoTransfer F9" ng-click="mexicoTransferBtn()" />
+		</div>
+
+	
+		</div>
+		</div>

@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Shipment Inquiry</title>
+</head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+<!-- <script type="text/javascript" src="ng-grid-1.3.2.js"></script> -->
+
+<!-- Angular JS controllers -->
+<script type="text/javascript" src="../js/controller/shipmentEnqApp.js"></script>
+<script type="text/javascript" src="../js/controller/proTransferCtrl.js"></script>
+<script type="text/javascript" src="../js/service/ProTransferHomeService.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script type="text/javascript" src="../js/controller/customerCtrl.js"></script>
+<script type="text/javascript" src="../js/controller/multipleProsCtrl.js"></script>
+<script type="text/javascript" src="../js/controller/traceByProTnblIlineCtrl.js"></script>
+
+
+
+<!-- jquery JS  -->
+<script type="text/javascript" src="../libs/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../libs/jquery/jquery-ui.js"></script>
+
+
+<!-- CSS files included -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/StyleSheet.css">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/main.css" />
+
+
+	<script type="text/javascript" src="../libs/jquery/jquery.min.js"></script>
+<body  style="overflow-x:'hidden'" ng-app="shipmentApp">
+<div ng-include="'header.html'"></div>
+	<!--  ************************************************************************** -->
+	
+	<div class="margin-top_30"
+				style="background-color: #eee; min-height: 500px; max-height: 680px; overflow-y: auto; overflow-x: none;"
+				ng-view></div>
+
+
+		
+
+
+	<div ng-include="'footer.html'"></div>	
+	
+</body>
+</html>

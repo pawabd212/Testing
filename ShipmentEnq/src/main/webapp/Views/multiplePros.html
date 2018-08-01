@@ -1,0 +1,85 @@
+
+
+<!-- CSS files included -->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/StyleSheet.css">
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/main.css" />
+
+
+	</div>
+	<div class="margin-top_30"
+		style="margin-bottom: 80px; padding-top: 2px; 900 px; max-height: 1200px;"
+		>
+		<form ng-submit="submitProDetail()">
+			<table style="width: 75%;">
+				<tr>
+					<td class="borderNone">Pro Number <input type="text"
+						class="textFieldLarge" size="15" ng-model="proDetailForm.proName"
+						maxlength="35" required ng-click="checkInitialLength()" />&nbsp; <input
+						type="text" class="textFieldSmall" size="4"
+						ng-model="proDetailForm.proSuffix" maxlength="3" required /> <input
+						type="submit" value="Submit" class="blue-button"
+						/>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table style="width: 34%;">
+			<tr>
+					<th>Pro Number</th>
+			</tr>
+			<tbody ng-repeat="proDetail in proDetails" ng-init="disable=true"
+				name="proDetail[$index]">
+				<tr ng-init="rowIndex=$index"
+					ng-click="changeColor(rowIndex,disable,proDetail)"
+					ng-class="rowIndex==selectedRow?'selected':''">
+
+					<td>{{ proDetail.proName }} {{ proDetail.proSuffix }}</td>
+				</tr>
+		</table>
+</br>
+		</br>
+		</br>
+		</br> </br> </br>
+		<div
+			style="height: 10px; padding-top: 50px; padding-right: 100px; padding-left: 150px">
+			<input type="Button" class="normle-button " id="transferBtn"
+				value="Add" disabled="disabled" ng-disabled="disable2"
+				ng-click="saveProDetails();" /> &nbsp;&nbsp;
+			<input type="Button"
+				class="normle-button " id="" value="Remove"
+				ng-click="commentBtn()" />&nbsp;&nbsp;
+			<input type="Button"
+				class="normle-button " id="" value="Clear List"
+				ng-click="commentBtn()" />&nbsp;&nbsp;	
+			<input type="Button"
+				class="normle-button " id="" value="Done/View Pro"
+				ng-click="commentBtn()" />&nbsp;&nbsp;	
+			<input type="Button"
+				class="normle-button " id="exit" value="Exit" ng-click="exitBtn()" />
+			&nbsp;&nbsp; 
+		</div>
+
+		
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br> </br>
+		</br>
+		</br>
+		</br> </br> </br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		<div class="container" style="padding-left: -1px; float: left">
+			<font color='#4B1388' size='1px'>&copy 2016 FedEx Corporation.
+				All rights reserved.</font>
+
+		</div>
+</body>
+</html>
